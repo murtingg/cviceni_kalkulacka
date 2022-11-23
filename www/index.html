@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulačka</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Windows kalkulačka</h1>
+    <input type="text" id="display" disabled>
+    <button 
+        class="button" 
+        id="button1" 
+        onclick="document.getElementById('display').value += '1'">
+        1
+    </button>
+    <button 
+        class="button" 
+        id="button2" 
+        onclick="document.getElementById('display').value += '2'">
+        2
+    </button>
+    <button 
+        class="button" 
+        id="button3" 
+        onclick="document.getElementById('display').value += '3'">
+        3
+    </button>
+    <button
+        class="button"
+        id="buttonPlus"
+        onclick="document.getElementById('display').value += '+'">
+        +
+    </button>
+    <button
+        class="button"
+        id="buttonMinus"
+        onclick="document.getElementById('display').value += '-'">
+        -
+    </button>
+    <button
+        class="button"
+        id="buttonMultiply"
+        onclick="document.getElementById('display').value += '*'">
+        *
+    </button>
+    <button
+        class="button"
+        id="buttonDivide"
+        onclick="document.getElementById('display').value += '/'">
+        /
+    </button>
+    <button
+        class="button"
+        id="buttonEqual"
+        onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">
+        =
+    </button>
+    <button
+        class="button"
+        id="buttonClear"
+        onclick="document.getElementById('display').value = ''">
+        C
+    </button>
+    
+</body>
+</html>
