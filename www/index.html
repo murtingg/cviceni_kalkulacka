@@ -7,22 +7,118 @@
     <script src="script.js"></script>
 </head>
 <body>
+<div class="kalkulacka">
     <h1>Windows kalkulačka</h1>
     <input type="text" id="display" disabled>
+    <button
+        class="button"
+        id="buttonPercent"
+        onclick="document.getElementById('display').value = document.getElementById('display').value / 100">
+        %
+    </button>
+    <button
+        class="button"
+        id="buttonCE"
+        onclick="document.getElementById('display').value = ''">
+        CE
+    </button>
+    <button
+        class="button"
+        id="buttonClear"
+        onclick="document.getElementById('display').value = ''">
+        C
+    </button>
+    <button
+        class="button"
+        id="buttonBackspace"
+        onclick="document.getElementById('display').value = document.getElementById('display').value.slice(0, -1)">
+        &larr;
+    </button>
+    <button
+        class="button"
+        id="buttonRoot"
+        onclick="document.getElementById('display').value = Math.sqrt(document.getElementById('display').value)">
+        &radic;
+    </button>
+    <button
+        class="button"
+        id="buttonPower"
+        onclick="document.getElementById('display').value += '**'">
+        ^
+    </button>
+    <button
+        class="button"
+        id="buttonDivide"
+        onclick="document.getElementById('display').value += '/'">
+        /
+    </button>
     <button 
-        class="button" 
+        class="buttonWhite" 
+        id="button7" 
+        onclick="document.getElementById('display').value += '7'">
+        7
+    </button>
+    
+    <button 
+        class="buttonWhite" 
+        id="button8" 
+        onclick="document.getElementById('display').value += '8'">
+        8
+    </button>
+
+    <button 
+        class="buttonWhite" 
+        id="button9" 
+        onclick="document.getElementById('display').value += '9'">
+        9
+    </button>
+    <button
+        class="button"
+        id="buttonMultiply"
+        onclick="document.getElementById('display').value += '*'">
+        *
+    </button>
+ 
+    <button 
+        class="buttonWhite" 
+        id="button4" 
+        onclick="document.getElementById('display').value += '4'">
+        4
+    </button>
+    
+    <button 
+        class="buttonWhite" 
+        id="button5" 
+        onclick="document.getElementById('display').value += '5'">
+        5
+    </button>
+
+<button 
+        class="buttonWhite" 
+        id="button6" 
+        onclick="document.getElementById('display').value += '6'">
+        6
+    </button>
+    <button
+        class="button"
+        id="buttonMinus"
+        onclick="document.getElementById('display').value += '-'">
+        -
+    </button>
+    <button 
+        class="buttonWhite" 
         id="button1" 
         onclick="document.getElementById('display').value += '1'">
         1
     </button>
     <button 
-        class="button" 
+        class="buttonWhite" 
         id="button2" 
         onclick="document.getElementById('display').value += '2'">
         2
     </button>
     <button 
-        class="button" 
+        class="buttonWhite" 
         id="button3" 
         onclick="document.getElementById('display').value += '3'">
         3
@@ -33,36 +129,30 @@
         onclick="document.getElementById('display').value += '+'">
         +
     </button>
-    <button
-        class="button"
-        id="buttonMinus"
-        onclick="document.getElementById('display').value += '-'">
-        -
+    <button 
+        class="buttonWhite"
+        id="buttonPlusMinus"
+        onclick="document.getElementById('display').value = -document.getElementById('display').value">
+        &plusmn;
     </button>
     <button
-        class="button"
-        id="buttonMultiply"
-        onclick="document.getElementById('display').value += '*'">
-        *
+        class="buttonWhite"
+        id="button0"
+        onclick="document.getElementById('display').value += '0'">
+        0
     </button>
     <button
-        class="button"
-        id="buttonDivide"
-        onclick="document.getElementById('display').value += '/'">
-        /
+        class="buttonWhite"
+        id="buttonDot"
+        onclick="document.getElementById('display').value += '.'">
+        .
     </button>
     <button
-        class="button"
+        class="buttonEqual"
         id="buttonEqual"
         onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">
         =
     </button>
-    <button
-        class="button"
-        id="buttonClear"
-        onclick="document.getElementById('display').value = ''">
-        C
-    </button>
-    
+</div>
 </body>
 </html>
