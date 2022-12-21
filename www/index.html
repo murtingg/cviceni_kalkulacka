@@ -28,30 +28,42 @@
         onclick="document.getElementById('display').value = ''">
         C
     </button>
+
     <button
         class="button"
         id="buttonBackspace"
         onclick="document.getElementById('display').value = document.getElementById('display').value.slice(0, -1)">
         &larr;
     </button>
+
+    <button
+        class="button"
+        id="buttonDivisionByX"
+        onclick="document.getElementById('display').value = 1 / document.getElementById('display').value">
+        <sup>1</sup>/x
+    </button>
+
     <button
         class="button"
         id="buttonRoot"
         onclick="document.getElementById('display').value = Math.sqrt(document.getElementById('display').value)">
         &radic;
     </button>
-    <button
-        class="button"
-        id="buttonPower"
-        onclick="document.getElementById('display').value += '**'">
-        ^
-    </button>
+
     <button
         class="button"
         id="buttonDivide"
         onclick="document.getElementById('display').value += '/'">
         /
     </button>
+
+    <button
+    class="button"
+    id="buttonSquareRoot"
+    onclick="document.getElementById('display').value = Math.pow(document.getElementById('display').value, 2)">
+    x<sup>2</sup>
+    </button>
+
     <button 
         class="buttonWhite" 
         id="button7" 
