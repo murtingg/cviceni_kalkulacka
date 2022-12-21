@@ -1,45 +1,57 @@
-.kalkulacka {
+#calculator {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  #input {
     width: 100%;
-    padding: 10px;
+    height: 30px;
     font-size: 16px;
-    margin-bottom: 20px;
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
     border: none;
-    background-color: #fff;
-    text-align: center;
-}
-
-h1 {
-    color: #357EC7;
-    text-align: center;
-    padding-top: 70px;
-}
-button {
-    padding: 10px;
-    font-size: 16px;
-    width: 20%;
+    border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    border: black;
-    background-color: #fff;
-    text-align: center;
-}
-
-body {
-    text-align: center;
-}
-
-.buttonWhite {
- background-color: aliceblue;
-}
-
-.buttonEqual {
- background-color: #357EC7;
- color: #fff;
-}
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  button:active {
+    background-color: #222;
+  }
+  
+  #clear, #backspace {
+    width: 64px;
+  }
+  
+  #comma {
+    width: 30px;
+  }
+  
+  #plusminus, #percent, #sqrt, #power {
+    width: 30px;
+    background-color: #555;
+  }
+  
+  #plusminus:hover, #percent:hover, #sqrt:hover, #power:hover {
+    background-color: #777;
+  }
+  
+  #plusminus:active, #percent:active, #sqrt:active, #power:active {
+    background-color: #333;
+  }

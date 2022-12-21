@@ -4,167 +4,38 @@
     <meta charset="UTF-8">
     <title>Kalkulačka</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="javascript" href="script.js">
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="kalkulacka">
-    <h1>Windows kalkulačka</h1>
-    <input type="text" id="display" disabled>
-    <button
-        class="button"
-        id="buttonPercent"
-        onclick="document.getElementById('display').value = document.getElementById('display').value / 100">
-        %
-    </button>
-    <button
-        class="button"
-        id="buttonCE"
-        onclick="document.getElementById('display').value = ''">
-        CE
-    </button>
-    <button
-        class="button"
-        id="buttonClear"
-        onclick="document.getElementById('display').value = ''">
-        C
-    </button>
-
-    <button
-        class="button"
-        id="buttonBackspace"
-        onclick="document.getElementById('display').value = document.getElementById('display').value.slice(0, -1)">
-        &larr;
-    </button>
-
-    <button
-        class="button"
-        id="buttonDivisionByX"
-        onclick="document.getElementById('display').value = 1 / document.getElementById('display').value">
-        <sup>1</sup>/x
-    </button>
-
-    <button
-        class="button"
-        id="buttonRoot"
-        onclick="document.getElementById('display').value = Math.sqrt(document.getElementById('display').value)">
-        &radic;
-    </button>
-
-    <button
-        class="button"
-        id="buttonDivide"
-        onclick="document.getElementById('display').value += '/'">
-        /
-    </button>
-
-    <button
-    class="button"
-    id="buttonSquareRoot"
-    onclick="document.getElementById('display').value = Math.pow(document.getElementById('display').value, 2)">
-    x<sup>2</sup>
-    </button>
-
-    <button 
-        class="buttonWhite" 
-        id="button7" 
-        onclick="document.getElementById('display').value += '7'">
-        7
-    </button>
-    
-    <button 
-        class="buttonWhite" 
-        id="button8" 
-        onclick="document.getElementById('display').value += '8'">
-        8
-    </button>
-
-    <button 
-        class="buttonWhite" 
-        id="button9" 
-        onclick="document.getElementById('display').value += '9'">
-        9
-    </button>
-    <button
-        class="button"
-        id="buttonMultiply"
-        onclick="document.getElementById('display').value += '*'">
-        *
-    </button>
- 
-    <button 
-        class="buttonWhite" 
-        id="button4" 
-        onclick="document.getElementById('display').value += '4'">
-        4
-    </button>
-    
-    <button 
-        class="buttonWhite" 
-        id="button5" 
-        onclick="document.getElementById('display').value += '5'">
-        5
-    </button>
-
-<button 
-        class="buttonWhite" 
-        id="button6" 
-        onclick="document.getElementById('display').value += '6'">
-        6
-    </button>
-    <button
-        class="button"
-        id="buttonMinus"
-        onclick="document.getElementById('display').value += '-'">
-        -
-    </button>
-    <button 
-        class="buttonWhite" 
-        id="button1" 
-        onclick="document.getElementById('display').value += '1'">
-        1
-    </button>
-    <button 
-        class="buttonWhite" 
-        id="button2" 
-        onclick="document.getElementById('display').value += '2'">
-        2
-    </button>
-    <button 
-        class="buttonWhite" 
-        id="button3" 
-        onclick="document.getElementById('display').value += '3'">
-        3
-    </button>
-    <button
-        class="button"
-        id="buttonPlus"
-        onclick="document.getElementById('display').value += '+'">
-        +
-    </button>
-    <button 
-        class="buttonWhite"
-        id="buttonPlusMinus"
-        onclick="document.getElementById('display').value = -document.getElementById('display').value">
-        &plusmn;
-    </button>
-    <button
-        class="buttonWhite"
-        id="button0"
-        onclick="document.getElementById('display').value += '0'">
-        0
-    </button>
-    <button
-        class="buttonWhite"
-        id="buttonDot"
-        onclick="document.getElementById('display').value += '.'">
-        .
-    </button>
-    <button
-        class="buttonEqual"
-        id="buttonEqual"
-        onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">
-        =
-    </button>
-</div>
+    <form id="calculator">
+        <input type="text" id="input" />
+        <br />
+        <button type="button" id="plus">+</button>
+        <button type="button" id="minus">-</button>
+        <button type="button" id="nasobeni">*</button>
+        <button type="button" id="deleni">/</button>
+        <button type="button" id="vysledek">=</button>
+        <button type="button" id="clear">C</button>
+        <button type="button" id="backspace">←</button>
+        <button type="button" id="0">0</button>
+        <button type="button" id="1">1</button>
+        <button type="button" id="2">2</button>
+        <button type="button" id="3">3</button>
+        <button type="button" id="4">4</button>
+        <button type="button" id="5">5</button>
+        <button type="button" id="6">6</button>
+        <button type="button" id="7">7</button>
+        <button type="button" id="8">8</button>
+        <button type="button" id="9">9</button>
+        <button type="button" id="comma">,</button>
+        <button type="button" id="plusminus">+/-</button>
+        <button type="button" id="percent">%</button>
+        <button type="button" id="sqrt">√</button>
+        <button type="button" id="power">x²</button>
+      </form>
 </body>
 </html>
